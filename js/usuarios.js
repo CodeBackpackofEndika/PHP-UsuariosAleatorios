@@ -12,6 +12,19 @@ $(function () {
         });
         usuarios.done(function (data) {
             console.log(data);
+            $(data.results).each(function (iE,vE) {
+                    console.log("tpm");
+                $("#listusuarios").append("<div class='row text-left'><img src='"
+                    +vE.picture.large+"'></img><br>"
+                    +vE.name.first+" "
+                    +vE.name.last+"<br>"
+                    +vE.email+"<br>"
+                    +vE.location.street+", "
+                    +vE.location.postcode+", "
+                    +vE.location.city+"("
+                    +vE.location.state
+                    +")</div>")
+            })
         });
         usuarios.fail(function () {
             console.log("Error!")
