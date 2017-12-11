@@ -1,0 +1,36 @@
+.row {
+    vertical-align: center;
+}
+
+.row:nth-child(2n+1) {
+    background-color: yellow;
+}
+
+.row:nth-child(2n) {
+    background-color: black;
+    color: yellow;
+}
+
+#listusuarios {
+    font-weight: bold;
+}
+
+img {
+    margin-right: 30px;
+}
+
+body {
+    background-color: #1d2124;
+}
+
+.jumbotron {
+    background-color: #1d2124;
+    color: Yellow;
+    font-weight: bold;
+
+}
+
+#boton {
+    color: Black;
+    font-weight: bold;
+}
