@@ -12,8 +12,10 @@ $(function () {
         });
         usuarios.done(function (data) {
             console.log(data);
-        })
+        });
+        usuarios.fail(function () {
+            console.log("Error!")
 
-
+        });
     });
 });
