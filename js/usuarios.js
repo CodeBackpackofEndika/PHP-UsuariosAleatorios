@@ -13,7 +13,7 @@ $(function () {
         usuarios.done(function (data) {
             console.log(data);
             $(data.results).each(function (iE,vE) {
-                    console.log("tpm");
+                    console.log("hastaaquífunciona");
                 $("#listusuarios").append("<div class='row text-left'><img src='"
                     +vE.picture.large+"'></img><br>"
                     +vE.name.first+" "
